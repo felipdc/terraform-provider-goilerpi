@@ -17,7 +17,7 @@ func dataSourceUsersRead(ctx context.Context, d *schema.ResourceData, m interfac
 
 	var diags diag.Diagnostics
 
-	req, err := http.NewRequest("GET", fmt.Sprintf("%s/user", "http://localhost:4000"), nil)
+	req, err := http.NewRequest("GET", fmt.Sprintf("%s/user", "http://localhost:4000/v1"), nil)
 	if err != nil {
 		return diag.FromErr(err)
 	}
