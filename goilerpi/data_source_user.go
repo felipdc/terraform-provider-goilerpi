@@ -1,4 +1,4 @@
-package hashicups
+package goilerpi
 
 import (
 	"context"
@@ -43,7 +43,7 @@ func dataSourceUsersRead(ctx context.Context, d *schema.ResourceData, m interfac
 	return diags
 }
 
-func dataSourceCoffees() *schema.Resource {
+func dataSourceUsers() *schema.Resource {
 	return &schema.Resource{
 		ReadContext: dataSourceUsersRead,
 		Schema: map[string]*schema.Schema{
