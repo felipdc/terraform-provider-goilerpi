@@ -1,0 +1,4 @@
+github.com/felipdc/goilerpi-client v0.0.0-20230129232414-f89cbe64a7c5 h1:0H6ZTe7A3sNvtpZec3+3wkFPdeYS8WMzRCyEIBWjkAw=
+github.com/felipdc/goilerpi-client v0.0.0-20230129232414-f89cbe64a7c5/go.mod h1:e+V2wTAJw1C7zbHTFNKf80knw6o1D62M3/99DyFrWu4=
+github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.1 h1:zHcMbxY0+rFO9gY99elV/XC/UnQVg7FhRCbj1i5b7vM=
+github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.1/go.mod h1:+tNlb0wkfdsDJ7JEiERLz4HzM19HyiuIoGzTsM7rPpw=
