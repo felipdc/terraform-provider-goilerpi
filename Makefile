@@ -1,6 +1,10 @@
-TEST?=$$(go list ./... | grep -v 'vendor') 
-BINARY=terraform-provider-goilerpi
-VERSION=0.1
+TEST?=$$(go list ./... | grep -v 'vendor')
+HOSTNAME=hashicorp.com
+NAMESPACE=edu
+NAME=goilerpi
+BINARY=terraform-provider-${NAME}
+VERSION=0.0.2
+OS_ARCH=linux_amd64
 
 default: install
 
@@ -8,10 +12,11 @@ build:
 	go build -o ${BINARY}
 
 release:
-	GOOS=linux GOARCH=amd64 go build -o ./bin/${BINARY}_${VERSION}_linux_amd64
+	goreleaser release --rm-dist --snapshot --skip-publish  --skip-sign
 
 install: build
-	mv ${BINARY} ~/.terraform.d/plugins
+	mkdir -p ~/.terraform.d/plugins/${HOSTNAME}/${NAMESPACE}/${NAME}/${VERSION}/${OS_ARCH}
+	mv ${BINARY} ~/.terraform.d/plugins/${HOSTNAME}/${NAMESPACE}/${NAME}/${VERSION}/${OS_ARCH}
 
 test: 
 	go test -i $(TEST) || exit 1                                                   

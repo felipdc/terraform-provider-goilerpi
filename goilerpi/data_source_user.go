@@ -65,7 +65,7 @@ func dataSourceUsers() *schema.Resource {
 							Computed: true,
 						},
 						"address": {
-							Type:     schema.TypeMap,
+							Type:     schema.TypeSet,
 							Computed: true,
 							Elem: &schema.Resource{
 								Schema: map[string]*schema.Schema{

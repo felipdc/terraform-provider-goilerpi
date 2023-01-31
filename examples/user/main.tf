@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     goilerpi = {
+      version = "0.0.2"
       source = "hashicorp.com/edu/goilerpi"
-      version = "0.0.1"
     }
   }
 }

@@ -2,9 +2,9 @@
 # Manual edits may be lost in future updates.
 
 provider "hashicorp.com/edu/goilerpi" {
-  version     = "0.0.1"
-  constraints = "0.0.1"
+  version     = "0.0.2"
+  constraints = "0.0.2"
   hashes = [
-    "h1:EPzsr7GTEuvwEnC/WPrNehqPYU6L5UAR7F9C5m1G9pM=",
+    "h1:5MaQXElhQRpHbWDa9IZgWmiye8qjPDZ3czWug6UOyz0=",
   ]
 }
