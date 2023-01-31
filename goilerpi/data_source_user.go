@@ -47,37 +47,37 @@ func dataSourceUsers() *schema.Resource {
 	return &schema.Resource{
 		ReadContext: dataSourceUsersRead,
 		Schema: map[string]*schema.Schema{
-			"users": &schema.Schema{
+			"users": {
 				Type:     schema.TypeList,
 				Computed: true,
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
-						"id": &schema.Schema{
+						"id": {
 							Type:     schema.TypeString,
 							Computed: true,
 						},
-						"name": &schema.Schema{
+						"name": {
 							Type:     schema.TypeString,
 							Computed: true,
 						},
-						"age": &schema.Schema{
+						"age": {
 							Type:     schema.TypeInt,
 							Computed: true,
 						},
-						"address": &schema.Schema{
+						"address": {
 							Type:     schema.TypeList,
 							Computed: true,
 							Elem: &schema.Resource{
 								Schema: map[string]*schema.Schema{
-									"state": &schema.Schema{
+									"state": {
 										Type:     schema.TypeString,
 										Computed: true,
 									},
-									"city": &schema.Schema{
+									"city": {
 										Type:     schema.TypeString,
 										Computed: true,
 									},
-									"pincode": &schema.Schema{
+									"pincode": {
 										Type:     schema.TypeInt,
 										Computed: true,
 									},
